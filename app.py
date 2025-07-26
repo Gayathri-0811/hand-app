@@ -1,12 +1,11 @@
 # streamlit_app.py
 import streamlit as st
 import numpy as np
-import tensorflow as tf
 from PIL import Image, ImageOps
 from streamlit_drawable_canvas import st_canvas
 
 # Load model
-model = tf.keras.models.load_model("hand2.keras")
+model = keras.models.load_model("hand2.keras")
 
 st.title("🖊️ Handwritten Digit Recognition")
 st.write("Draw a digit (0–9) in the canvas below:")
